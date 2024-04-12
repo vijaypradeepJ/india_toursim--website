@@ -250,12 +250,14 @@ nav{
     .aboutnorth{
       text-align: center;
       text-transform:uppercase;
-      color: #2C7865;
-      font-family:Arial, Helvetica, sans-serif;
+      color: #FF5BAE;
+      font-family:popins;
+
     }
-    .aboutnorth h3{
-      color:#4CCD99;
-      padding-top: 10px;
+    .card-body h3{
+      color:#007F73;
+      font-family: popins;
+      text-transform: capitalize;
     }
   .card{
       margin-left:10%;
@@ -271,128 +273,20 @@ nav{
       background:#edf6f9;
       
     }
-    
-    .container {
-      max-width: 1200px;
-      width: 95%;
-    }
-   .image-list h3{
-    text-align: center;
-    text-transform: uppercase;
-    color:#FF204E;
-   }
-    
-    .slider-wrapper {
-      position: relative;
-    }
-   .title{
-      text-align:center;
-      margin-left:600px;
-      position:absolute;
-      margin-top:50px;
+    .title1{
+      text-align: center;
+      font-family: popins;
+      font-weight: bold;
+      color:#007F73;
     }
     
-    
-    .slider-wrapper .image-list {
-      display: grid;
-      grid-template-columns: repeat(10, 1fr);
-      gap: 18px;
-      font-size: 0;
-      list-style: none;
-      margin-bottom: 30px;
-      overflow-x: auto;
-      scrollbar-width: none;
-      object-fit: cover;
-    }
-    
-    .slider-wrapper .image-list::-webkit-scrollbar {
-      display: none;
-    }
-    
-    .slider-wrapper .image-list .image-item {
-      width: 325px;
-      height: 400px;
-      object-fit: cover;
-    }
-    
-    .container .slider-scrollbar {
-      height: 24px;
-      width: 100%;
-      display: flex;
-      align-items: center;
-    }
-    
-    .slider-scrollbar .scrollbar-track {
-      background: #ccc;
-      width: 100%;
-      height: 2px;
-      display: flex;
-      align-items: center;
-      border-radius: 4px;
-      position: relative;
-    }
-    
-    .slider-scrollbar:hover .scrollbar-track {
-      height: 4px;
-    }
-    
-    .slider-scrollbar .scrollbar-thumb {
-      position: absolute;
-      background: #000;
-      top: 0;
-      bottom: 0;
-      width: 50%;
-      height: 100%;
-      cursor: grab;
-      border-radius: inherit;
-    }
-    
-    .slider-scrollbar .scrollbar-thumb:active {
-      cursor: grabbing;
-      height: 8px;
-      top: -2px;
-    }
-    
-    .slider-scrollbar .scrollbar-thumb::after {
-      content: "";
-      position: absolute;
-      left: 0;
-      right: 0;
-      top: -10px;
-      bottom: -10px;
-    }
-    
-    /* Styles for mobile and tablets */
-    @media only screen and (max-width: 1023px) {
-      .slider-wrapper .slide-button {
-        display: none !important;
-      }
-    
-      .slider-wrapper .image-list {
-        gap: 10px;
-        margin-bottom: 15px;
-        scroll-snap-type: x mandatory;
-      }
-    
-      .slider-wrapper .image-list .image-item {
-        width: 280px;
-        height: 380px;
-      }
-    
-      .slider-scrollbar .scrollbar-thumb {
-        width: 20%;
-      }
-      .title{
-        margin-left:100px;
-        margin-top:70px;
-  
-      }
-    }
+   
    /*---------------------south-------------------*/
    /*--------------- about south----------*/
  .headersouth{
   text-align: center;
   font-weight: bolder;
+  font-family: popins;
   text-transform: capitalize;
   color: #007F73;
  }
@@ -402,29 +296,57 @@ nav{
   font-size:3rem;
  }
  .aboutsouth{
+  display:grid;
+  grid-template-columns: auto auto;
   text-transform: capitalize;
-  width:50%;
+  width:100%;
   margin-left:20px;
+  font-family:popins;
  }
- /*-----------------listcontent----------*/
- .listcontent{
- }
- .listcontent li{
-  display: inline;
-  text-decoration:none;
-  margin-top:20px;
-  margin-left:10px;
-  text-transform: capitalize;
+ .aboutsouth .southimg{
+  transform: scale(0.8);
+  padding-bottom:20px;
 
  }
- .listcontent a{
-  text-decoration: none;
-  padding-left:20px;
-  padding-right: 30px;
-  color:black;
-  
+ .states{
+  margin-left:20px;
+  font-family: popins;
+  font-weight:bolder;
+  color: #007F73;
  }
+ .places h2{
+  text-align: center;
+  color: #ffb703;
+  text-transform: capitalize;
+ }
+ @media screen and (max-width:600px){
+  .aboutsouth{
+    display: grid;
+    grid-template-columns: auto;
+
+  }
+  .aboutsouth .southimg{
+    transform: scale(0.8);
+    margin-right:100%;
+  }
+  .aboutsouth .aboutsh p{
+    margin-right:20%;
+
+  }
+    
+ }
+ /*-----------------listcontent----------*/
+
+ .abouttoursim{
+  margin-left:20px;
+  text-transform: capitalize;
+  margin-top:30px;
+ }
+
+
+
   .center {
+    margin-top:10px;
     width: 100%;
     height: 100%;
   }
@@ -432,12 +354,14 @@ nav{
     width: 100%;
     box-sizing: border-box;
     padding: 20px;
-    color: white;
+    color:#ffb703;
     font-family: poppins;
-    font-size: 100px;
-    font-weight: 600;
+    font-size:20px;
+    font-weight:600;
   }
   .slider {
+    margin-top: 50px;
+
     width: 100%;
     height: fit-content;
     overflow: hidden;
@@ -446,6 +370,7 @@ nav{
     width: fit-content;
     display: flex;
     animation: slide 50s linear infinite;
+    overflow-x: scroll;
   }
   .item {
     width: 350px;
@@ -457,6 +382,7 @@ nav{
       transform: translateX(0);
     }
     100% {
-      transform: translateX(-50%);
+      transform: translateX(-30%);
     }
   }
+ 
