@@ -14,10 +14,10 @@
 <body>
     <div class="aboutnorth">
         <h1>Explore North India</h1>
-        <h3>About north India</h3>
     </div>
     <div class="card">
         <div class="card-body">
+          <h3>About north India</h3>
             North India is a destination pulsating with extraordinary attractions. Endowed with sheer natural beauty and a rich
              cultural heritage, North India beckons you for a travel experience of a lifetime. North India Tour will take you to 
              its historic, majestic and celestial destinations such as Delhi, Himachal Pradesh, Jammu & Kashmir, Rajasthan, Punjab,
@@ -29,35 +29,49 @@
                  raja-maharajas of the bygone era.
             </div>
           </div>
-          <div class="title">
-            <h1>Top Destination</h1>
+          <div class="title1">
+            <h1>Top Destination in north india</h1>
             </div>
 
 
-    <div class="northindia">
-    <div class="container">
-        <div class="slider-wrapper">
-          <ul class="image-list">
-          <h3><img class="image-item" src="images/Beautiful-Kashmir-Valleys-1.jpg" alt="img-1" />kashmir</h3>
-           <h3><img class="image-item" src="images/Scenic-Shimla-Hills-1 (1).jpg" alt="img-2" />shimla</h3>
-           <h3> <img class="image-item" src="images/Tibetan-Attractions-in-Dharamshala-1.jpg" alt="img-3" />dharamshala</h3>
-           <h3> <img class="image-item" src="images/paragliding-in-Manali.jpg" alt="img-4" />kullu and manali</h3>
-            <h3><img class="image-item" src="images/Naini-Lake-in-Nainital-1.jpg" alt="img-5" />nainitial</h3>
-            <h3><img class="image-item" src="images/Spectacular-view-of-Mussoorie-Hill-Station-1.jpg" alt="img-6" />mussoorie</h3>
-           <h3> <img class="image-item" src="images/Spiti-Valley-1.jpg" alt="img-7" />spiti</h3>
-            <h3><img class="image-item" src="images/Mehrangarh-Fort-in-Jodhpur-1.jpg" alt="img-8" />Jodhapur</h3>
-            <h3><img class="image-item" src="images/images (1).jpeg" alt="img-9" />kufri</h3>
-            <h3><img class="image-item" src="images/images.jpeg" alt="img-10" />varanasi</h3>
-          </ul>
-        </div>
-        <div class="slider-scrollbar">
-          <div class="scrollbar-track">
-            <div class="scrollbar-thumb"></div>
-          </div>
-        </div>
-      </div>
-      </div>
-  
+
+            <div class="center">
+              <div class="slider">
+                <div class="items">
+                <img src="images/Beautiful-Kashmir-Valleys-1.jpg" alt="" class="item"/>
+                  <img src="images/Scenic-Shimla-Hills-1 (1).jpg" alt="" class="item" />
+                  <img src="images/Tibetan-Attractions-in-Dharamshala-1.jpg" alt="" class="item" />
+                  <img src="images/paragliding-in-Manali.jpg" alt="" class="item" />
+                  <img src="images/Naini-Lake-in-Nainital-1.jpg" alt="" class="item" />
+                  <img src="images/Spectacular-view-of-Mussoorie-Hill-Station-1.jpg" alt="" class="item" />
+                  <img src="images/Spiti-Valley-1.jpg" alt="" class="item" />
+        
+                  <img src="images/Mehrangarh-Fort-in-Jodhpur-1.jpg" alt="" class="item" />
+                  <img src="images/images (1).jpeg" alt="" class="item" />
+                  <img src="images/images.jpeg" alt="" class="item" />
+                 
+                </div>
+              </div>
+            </div>
+            <script>
+              let scrollcontainer = document.querySelector(".gallery");
+              let backbtn = document.getElementById("backBtn");
+              let nextbtn = document.getElementById("nextBtn");
+             scrollcontainer.addEventListener("wheel",(evt)=>{
+                evt.preventDefault();
+               scrollcontainer.scrollLeft +=evt.deltaY;
+              });
+              nextBtn.addEventListener("click",()=>{
+                scrollcontainer.style.scrollBehavior="smooth";
+               scrollcontainer.scrollLeft +=900;
+              });
+              backBtn.addEventListener("click",()=>{
+                scrollcontainer.style.scrollBehavior="smooth";
+                scrollcontainer.scrollLeft -=900;
+              });
+        
+        
+            </script>
      <script src="app.js"></script>
    
 </body>
