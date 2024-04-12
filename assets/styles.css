@@ -389,13 +389,74 @@ nav{
       }
     }
    /*---------------------south-------------------*/
-   .imageslidecard{
-    width:35%;
-    height:40px;
-    margin-left:390px;
-    margin-top: 50px;
+   /*--------------- about south----------*/
+ .headersouth{
+  text-align: center;
+  font-weight: bolder;
+  text-transform: capitalize;
+  color: #007F73;
+ }
+ .aboutsouth span{
+  color: orangered;
+  text-transform: capitalize;
+  font-size:3rem;
+ }
+ .aboutsouth{
+  text-transform: capitalize;
+  width:50%;
+  margin-left:20px;
+ }
+ /*-----------------listcontent----------*/
+ .listcontent{
+ }
+ .listcontent li{
+  display: inline;
+  text-decoration:none;
+  margin-top:20px;
+  margin-left:10px;
+  text-transform: capitalize;
 
+ }
+ .listcontent a{
+  text-decoration: none;
+  padding-left:20px;
+  padding-right: 30px;
+  color:black;
+  
+ }
+  .center {
+    width: 100%;
+    height: 100%;
   }
-  #slideimg{
-    object-fit: cover;
+  .title {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    color: white;
+    font-family: poppins;
+    font-size: 100px;
+    font-weight: 600;
+  }
+  .slider {
+    width: 100%;
+    height: fit-content;
+    overflow: hidden;
+  }
+  .items {
+    width: fit-content;
+    display: flex;
+    animation: slide 50s linear infinite;
+  }
+  .item {
+    width: 350px;
+    border-radius: 5mm;
+    margin: 10px;
+  }
+  @keyframes slide {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
   }
