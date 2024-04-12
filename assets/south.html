@@ -14,6 +14,8 @@
 />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 <link
   href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
   rel="stylesheet"
@@ -29,31 +31,123 @@
   <h1>Explore south India</h1>
   </div>
   <div class="aboutsouth">
+    <div  class="aboutsh">
     <h2><span>south india</span> travel guide</h2>
     <p>South India reminds you of places you wished to see in your dreams. Pristine beaches, 
       vast stretch of ocean, high hills of the Western Ghats and centuries old history. Nothing disappoints
        you on your journey to the south. Walking down a road with trees on both sides on a sunny morning, the 
        journey itself is as beautiful as the destination. Magnificent rock-cut cave temples depict stories of the 
        ancient Dravidians.</p>
-  </div>
-  <div class="listcontent">
-    <ul>
-      <li><a href="">states of india</a></li>
-    <li><a href=""> destinations in india</a></li>
-    <li><a href="">top attractions in india</a></li>
-   <li><a href=""> north india</a></li>
-    <li><a href="">south india</a></li>
-   <li><a href=""> westindia</a></li>
-    <li><a href="">eastindia</a></li>
-   <li><a href=""> central india</a></li>
-  </div>
+       <h3>about south india</h3>
+    <p>South India comprises Andhra Pradesh, Karnataka, Tamil Nadu, Kerala, Telangana and the Union Territories of Lakshadweep,
+       Andaman and Nicobar Islands and Puducherry. Lush green tea and coffee plantations on the slopes with a backdrop of different
+        hues of blue sky fill your heart with solace. Not to forget the magnificent examples of Dravidian style of architectural 
+        brilliance such as the temples of Mahabalipuram, Hampi and Chola Temple among many others. South India is a treasure trove
+         of peace, scenic views, nature’s bliss and ancient history of India’s glory.<br> Thus, making it one of the best travel 
+         destinations in India.
 
+      Tour My India presents a South India Travel Guide to make your travel plans convenient:</p>
+       </div>
+       <div class="southimg">
+        <img src="images/tamilnadu.jpg">
+  
+      </div>
+    </div>
+    <section class="places">
+      <div class="placestext">
+          <h1>states and union terrritories in south india</h1>    
+      <div class="cards" id="cards">
+         <div class="card1">
+             <div class="north">
+             <a href="assets/north.html"> <img src="images/tamilnadu.jpg"></a>
+             <h4>tamil-nadu<h4>
+
+             </div>
+            
+             </div>
+     
+         <div class="card1">
+             <div class="south">
+                 <img src="images/keralasouth.jpg"> 
+                 <h4>kerala<h4>
+                 
+             </div>
+            
+         </div>
+         
+         <div class="card1">
+             <div class="west">
+                 <img src="images/karnatka.jpg">
+                 <h4>karnataka<h4>
+                  
+                 
+   
+
+             </div>
+             
+         </div>
+         <div class="card1">
+             <div class="east">
+                <img src="images/ANdhra.png">
+                <h4>andhra pradesh<h4>
+                  
+   
+
+             </div>
+         </div>    
+             <div class="card1">
+                 <div class="northeast">
+                     <img src="images/telgana.jpg">
+                     <h4>telgana<h4>
+                  
+
+                      
+       
+ 
+                 </div>
+             </div>    
+                 <div class="card1">
+                     <div class="central">
+                         <img src="images/pondi.jpg">
+                         <h4>pondi<h4>
+                         
+           
+     
+                     </div>
+                     
+            
+         </div>
+         <div class="card1">
+          <div class="northeast">
+              <img src="images/laksha.jpg">
+              <h4>lakshashweep<h4>
+          
+
+               
+
+
+          </div>
+      </div>
+      <div class="card1">
+        <div class="northeast">
+            <img src="images/nicobar.jpg">
+            <h4>andaman&nicobar<h4>
+        
+
+             
+
+
+        </div>
+    </div>
+      </div>
+      </div>
+      <h2>popular destination to visit south india</h2>
+      </section>
 
     <div class="center">
-      <div class="title">INFINITE CAROUSEL</div>
       <div class="slider">
         <div class="items">
-         <img src="images/Kanyakumari-1.jpg_cf-webp_w-848_h-551.jpg" alt="" class="item"/>
+        <img src="images/Kanyakumari-1.jpg_cf-webp_w-848_h-551.jpg" alt="" class="item"/>
           <img src="images/Coorg-1.jpg_cf-webp_w-848_h-551.jpg" alt="" class="item" />
           <img src="images/Gokarna-1.jpg_cf-webp_w-848_h-551.jpg" alt="" class="item" />
           <img src="images/Hampi-1.jpg_cf-webp_w-848_h-551.jpg" alt="" class="item" />
@@ -71,6 +165,25 @@
         </div>
       </div>
     </div>
+    <script>
+      let scrollcontainer = document.querySelector(".gallery");
+      let backbtn = document.getElementById("backBtn");
+      let nextbtn = document.getElementById("nextBtn");
+     scrollcontainer.addEventListener("wheel",(evt)=>{
+        evt.preventDefault();
+       scrollcontainer.scrollLeft +=evt.deltaY;
+      });
+      nextBtn.addEventListener("click",()=>{
+        scrollcontainer.style.scrollBehavior="smooth";
+       scrollcontainer.scrollLeft +=900;
+      });
+      backBtn.addEventListener("click",()=>{
+        scrollcontainer.style.scrollBehavior="smooth";
+        scrollcontainer.scrollLeft -=900;
+      });
+
+
+    </script>
   </body>
 </html>
 
